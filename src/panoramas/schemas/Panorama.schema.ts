@@ -6,9 +6,6 @@ export type PanoramaDocument = Panorama & Document;
 @Schema()
 export class Panorama {
   @Prop()
-  id: number;
-
-  @Prop()
   photoURL: string;
 }
 
