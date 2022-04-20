@@ -4,6 +4,8 @@ import { Panorama, PanoramaDocument } from './schemas/Panorama.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { ConfigService } from '@nestjs/config';
 import * as AWS from 'aws-sdk';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 AWS.config.update({
   region: process.env.AWS_S3_REGION,

@@ -14,6 +14,8 @@ import { PanoramasService } from './panoramas.service';
 import * as multerS3 from 'multer-s3';
 import * as AWS from 'aws-sdk';
 import { v4 as uuidv4 } from 'uuid';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const s3 = new AWS.S3();
 
