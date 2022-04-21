@@ -1,5 +1,4 @@
-import { Injectable, UseInterceptors } from '@nestjs/common';
-import * as multerS3 from 'multer-s3';
+import { Injectable } from '@nestjs/common';
 import * as AWS from 'aws-sdk';
 import * as dotenv from 'dotenv';
 dotenv.config();
